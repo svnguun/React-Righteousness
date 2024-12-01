@@ -1,0 +1,59 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ddd;
+}
+
+.main {
+  display: flex;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 한 줄에 3개씩 배치 */
+  gap: 20px; /* 카드 간격 */
+  padding: 20px;
+}
+.content-card {
+  padding: 20px;
+  margin: 0; /* gap이 있기 때문에 margin은 불필요 */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-card a {
+  text-decoration: none;
+  color: #6c63ff;
+}
+
+.content-page {
+  padding: 20px;
+}
+
+.try-free {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
